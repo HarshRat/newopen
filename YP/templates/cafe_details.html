@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Yummy Peace </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/font.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <div style="width: 1358px; height: 652px; overflow-y: scroll;">
+      <div class="logo">
+      <a href = "/"><img style="display: inline;" img src="{{url_for('static', filename='logo.jpg')}}"></a>
+    </div>
+      <div class="wrap">
+        <h1 style="display: inline;"><b>Yummy Peace</b></h1>
+      </div>
+
+      <ul class="main-nav">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/food">FOOD</a></li>
+        <li class="active"><a href="/cafe">CAFE</a></li>
+      </ul>
+
+      <div class = "res">
+        <h6>Details of {{Rest}}</h6>
+        <ul>
+                <li><p style="text-align:center">Name{{Det[0]}} &nbsp PP Cost {{Det[1]}} &nbsp  CNo {{Det[2]}} &nbsp Address {{Det[3]}}, {{Det[4]}} &nbsp Veg Non-Veg {{Det[5]}}</p></li>
+        </ul>
+      </div>
+
+  </header>
+</body>
+</html>
