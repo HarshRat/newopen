@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+.wrap {
+  text-align: center;
+  height: 186px;
+  margin: 0;
+}
+
+.wrap h1{
+  text-align: center;
+  font-weight: normal;
+  color: red;
+  text-transform: uppercase;
+  font-size: 8em;
+  white-space: nowrap;
+  font-size: 5vw;
+  z-index: 1000;
+  margin-left: 360px;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+  @include skew(0, -6.7deg, false);
+  @include transition-property(font-size);
+  @include transition-duration(0.5s);
+
+}
+
+@media screen and (max-width: 50em) {
+  h1 {
+    font-size: 20vw;
+   }
+}

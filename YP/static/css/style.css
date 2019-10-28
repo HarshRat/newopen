@@ -1,0 +1,239 @@
+header
+{
+  background-image :linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("w2.jpg");
+  height : 100vh;
+  background-size : cover;
+  background-position : center;
+  position:fixed;
+  width:100%;
+}
+
+header ul
+{
+     float:left;
+   padding: 0;
+   margin: 0;
+}
+
+header a
+{
+  color:white;
+  background:rgba(0,0,0,0.1);
+  display:inline-block;
+  padding:0px 0px;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  font-family: 'Roboto',sans-serif ;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:700;
+}
+
+.main-nav
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  min-width: 930px;
+  background-color: black;
+}
+
+.main-nav li
+{
+  float: left;
+  display: inline;
+  width: 100px;
+  height: 40px;
+  color : red;
+  text-decoration : none;
+  padding : 05px 20px;
+  font-family : "Roboto", sans-serif;
+  font-size : 15px;
+}
+
+.main-nav li.active a
+ {
+   border : white solid 1px;
+ }
+
+.main-nav li a:hover
+ {
+   border : white solid 1px;
+ }
+
+.body
+{
+  font-family : monospace;
+}
+
+.wrap h1
+{
+  text-align: center;
+  font-size: 120px;
+  color: red;
+  margin-left: auto;
+}
+
+.logo img
+{
+  position:relative;
+  float: left;
+  width: 300px;
+  height: 250px;
+  margin-left: 0px;
+}
+
+.box h6
+{
+  color : yellow;
+  text-transform: none;
+  font-size: 30px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.res h6
+{
+  color : white;
+  text-transform: none;
+  font-size: 40px;
+  margin-left: 20px;
+  font-family: fantasy;
+}
+
+.res li
+{
+  color : white;
+  text-transform: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-left: 50px;
+}
+
+.col
+{
+  text-align: center;
+
+
+}
+
+.form-group label
+{
+  color: aquamarine;
+  text-transform: none;
+  font-size: 50px;
+  width:500px;
+  float: left;
+  padding:20px;
+}
+
+.form_control
+{
+  color : black;
+  position: relative;
+  text-transform: none;
+  font-size: 30px;
+  float: left;
+  width:400px;
+  padding:5px;
+  margin-left: 300px;
+}
+
+.btn
+{
+  border: 5px solid grey;
+  height: 10px;
+  width: 100px;
+  float:left;
+  padding:20px;
+}
+
+div.gallery {
+    margin: 90px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+    background-color: darkred;
+    margin-left: 100px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 250px;
+    height: 300px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.txt p
+{
+  color : lime;
+  font-family: cursive;
+  font-size: 50px;
+  text-align: center;
+  width:800px;
+  float:left;
+  padding:10px;
+}
+
+.caf h6
+{
+  color : white;
+  text-transform: none;
+  font-size: 40px;
+  margin-left: 20px;
+  font-family: fantasy;
+}
+
+.caf li
+{
+  color : white;
+  text-transform: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-left: 50px;
+}
+
+.res h5
+{
+  color : white;
+  text-transform: none;
+  font-size: 40px;
+  margin-left: 20px;
+  font-family: cursive;
+}
+
+.cos
+{
+  margin-left: 200px;
+}
+.vertical-menu {
+    width: 300px;
+    line-height: 30px;
+    float:left;
+    padding:5px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}

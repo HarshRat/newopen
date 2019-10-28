@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Yummy Peace </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/font.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <div style="width: 1358px; height: 652px; overflow-y: scroll;">
+      <div class="logo">
+      <a href = "/"><img style="display: inline;" img src="{{url_for('static', filename='logo.jpg')}}"></a>
+    </div>
+      <div class="wrap">
+        <h1 style="display: inline;"><b>Yummy Peace</b></h1>
+      </div>
+
+      <ul class="main-nav">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/food">FOOD</a></li>
+        <li class="active"><a href="/cafe">CAFE</a></li>
+      </ul>
+
+      <div class = "res">
+        <h6>Menu of {{Rest}}</h6>
+        <ul>
+            {% for F in Menu %}
+                <li><p style="text-align:center">{{F[0]}} &nbsp Regular: {{F[1]}} &nbsp  Large: {{F[2]}}</p></li>
+            {% endfor %}
+        </ul>
+      </div>
+
+  </header>
+</body>
+</html>

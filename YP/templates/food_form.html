@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Yummy Peace </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/font.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+      <div style="width: 1358px; height: 652px; overflow-y: scroll;">
+      <div class="logo">
+      <a href = "/"><img style="display: inline;" img src="{{url_for('static', filename='logo.jpg')}}"></a>
+    </div>
+      <div class="wrap">
+        <h1 style="display: inline;"><b>Yummy Peace</b></h1>
+      </div>
+
+
+      <ul class="main-nav">
+        <li><a href="/">HOME</a></li>
+        <li class="active"><a href="/food">FOOD</a></li>
+        <li><a href="/cafe">CAFE</a></li>
+      </ul>
+
+      <div class="vertical-menu">
+        <a href="{{url_for('cuisine' , ftype = 'italian')}}">Italian</a>
+        <a href="{{url_for('cuisine' , ftype = 'maincourse')}}">Maincourse</a>
+        <a href="{{url_for('cuisine' , ftype = 'mexican')}}">Mexican</a>
+        <a href="{{url_for('cuisine' , ftype = 'chinese')}}">Chinese</a>
+        <a href="{{url_for('cuisine' , ftype = 'beverages')}}">Beverages</a>
+     </div>
+
+     <div class = "txt">
+       <p>  Search for food and cuisine</p>
+    </div>
+
+
+    <div class = "row1" style = "margin-left">
+       <div class = "col">
+         <form role = "form"  action = "/food"  method = "POST">
+           <div class = "form-group">
+             <label for = "Food">Food   &nbsp   </label>
+             <input class = "form_control" name = "Food" placeholder="Food to Search for">
+           </div>
+           <button type = "submit" name = "submit" class = "btn btn-default" value = "Form Sent">Submit</button>
+         </form>
+       </div>
+     </div>
+
+
+
+
+  </header>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Yummy Peace </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/font.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+      <div style="width: 1358px; height: 652px; overflow-y: scroll;">
+      <div class="logo">
+      <a href = "/"><img style="display: inline;" img src="{{url_for('static', filename='logo.jpg')}}"></a>
+    </div>
+      <div class="wrap">
+        <h1 style="display: inline;"><b>Yummy Peace</b></h1>
+      </div>
+
+      <ul class="main-nav">
+        <li class="active"><a href="/">HOME</a></li>
+        <li><a href="/food">FOOD</a></li>
+        <li><a href="/cafe">CAFE</a></li>
+      </ul>
+
+      <div class = "box">
+        <h6>Welcome to YummyPeace - Ending Your Hunger Wars</h6>
+      </div>
+
+      <div class="gallery">
+          <img src="{{url_for('static', filename='images.jpg')}}" width="300" height="200">
+        <div class="desc">Fries Before Guys</div>
+      </div>
+
+      <div class="gallery">
+          <img src="{{url_for('static', filename='waff.jpg')}}" width="600" height="400">
+        <div class="desc">Why MESS UP when you can WAFF UP</div>
+      </div>
+
+      <div class="gallery">
+          <img src="{{url_for('static', filename='chill.jpg')}}" width="600" height="400">
+        <div class="desc">When life gives you lemons make lemonade.</div>
+      </div>
+
+      <div class="gallery">
+          <img src="{{url_for('static', filename='pizza.jpeg')}}"  width="600" height="400">
+        <div class="desc">A balanced diet is a pizza in each hand</div>
+      </div>
+
+      <div class="gallery">
+          <img src="{{url_for('static', filename='cake.jpg')}}" width="600" height="400">
+        <div class="desc">Eat cake.It's somebody's birthday somewhere.</div>
+      </div>
+
+      <div class="gallery">
+          <img src="{{url_for('static', filename='bur.jpg')}}"  width="600" height="400">
+        <div class="desc">Only six packs a foodie wishes for</div>
+      </div>
+
+    </div>
+  </header>
+</body>
+</html>
